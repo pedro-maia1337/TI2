@@ -1,0 +1,382 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "2",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    },
+    {
+      "login": "rommel",
+      "senha": "123",
+      "nome": "Rommel",
+      "email": "rommel@gmail.com",
+      "id": "3"
+    },
+    {
+      "login": "teste",
+      "senha": "teste",
+      "nome": "teste",
+      "email": "teste",
+      "id": "FuLMMZr"
+    }
+  ],
+  "carteiras": [
+    {
+      "nomeConta": "Poupança",
+      "saldo": 0,
+      "descricaoConta": "Fdasasdf",
+      "meta": 123412,
+      "tipo": "Conta Corrente",
+      "detalhes": "Ola",
+      "id_icone": "🐖",
+      "id_cor": "#2ecc71",
+      "id": "58a2"
+    },
+    {
+      "nomeConta": "Viagens",
+      "saldo": 0,
+      "descricaoConta": "abcd",
+      "meta": 1000,
+      "tipo": "Cartão de Crédito",
+      "detalhes": "abcd",
+      "id_icone": "✈️",
+      "id_cor": "#3498db",
+      "id": "qGCgG4P"
+    },
+    {
+      "nomeConta": "Conta BB",
+      "saldo": 0,
+      "descricaoConta": "adfsasdf",
+      "meta": 1231,
+      "tipo": "Cartão de Crédito",
+      "detalhes": "afdsfa",
+      "id_icone": "🏦",
+      "id_cor": "#8e44ad",
+      "id": "j02UVIb"
+    },
+    {
+      "nomeConta": "Conta Inter",
+      "saldo": 0,
+      "descricaoConta": "abc",
+      "meta": 10000,
+      "tipo": "Cartão de Débito",
+      "detalhes": "abcd",
+      "id_icone": "👶",
+      "id_cor": "#f39c12",
+      "id": "65AwP8H"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "Alimentação"
+    },
+    {
+      "id": "2",
+      "nome": "Vestuário"
+    },
+    {
+      "id": "3",
+      "nome": "Lazer"
+    },
+    {
+      "id": "4",
+      "nome": "Transporte"
+    },
+    {
+      "id": "5",
+      "nome": "Saúde"
+    },
+    {
+      "id": "6",
+      "nome": "Educação"
+    },
+    {
+      "id": "7",
+      "nome": "Moradia"
+    },
+    {
+      "id": "8",
+      "nome": "Entretenimento"
+    },
+    {
+      "id": "9",
+      "nome": "Trabalho"
+    },
+    {
+      "id": "10",
+      "nome": "Pessoal"
+    },
+    {
+      "id": "11",
+      "nome": "Financeiro"
+    },
+    {
+      "id": "12",
+      "nome": "Contas"
+    }
+  ],
+  "tutoriais": [
+    {
+      "url": "https://www.youtube.com/watch?v=AQtcMFcGi0g",
+      "titulo": "Como se livrar do ciclo das dívidas em 2023",
+      "descricao": "Sabe aquela história de entrar numa dívida, penar para pagar, prometer que nunca mais vai fazer isso, mas... dali um tempinho... está endividado de novo? Pois é! Neste vídeo, você vai saber o porquê de viver nesse ciclo e como sair dele! ",
+      "youtubeId": "AQtcMFcGi0g",
+      "duracao": "20",
+      "id": 11
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=S5psBbzm6HU",
+      "titulo": "5 HÁBITOS FINANCEIROS para começar hoje",
+      "descricao": "Conheça 5 práticas simples que você pode implementar hoje na sua rotina e que irão melhorar a sua vida financeira! ",
+      "youtubeId": "S5psBbzm6HU",
+      "duracao": "14",
+      "id": 12
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KVdKT5C5f04",
+      "titulo": "7 DICAS para ECONOMIZAR DINHEIRO",
+      "descricao": "Está cansado da dica de cortar o cafezinho? Ótimo! Neste vídeo você vai entender o conceito de economizar e como fazer isso no seu dia a dia, segundo a sua realidade. Confira!",
+      "youtubeId": "KVdKT5C5f04",
+      "duracao": "13",
+      "id": 13
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CPeQs7CAaZQ",
+      "titulo": "Como Definir Objetivos Financeiros em 2024 - Educação Financeira Ilustrada",
+      "descricao": "Entenda como planejar suas finanças com os \"potes financeiros\" de reserva de emergência, reserva pessoal e investimentos de longo prazo.",
+      "youtubeId": "CPeQs7CAaZQ",
+      "duracao": "9",
+      "id": 14
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AfMGeMZmyUU",
+      "titulo": "Organização Financeira (Simples) p/ Quem Ganha Pouco",
+      "descricao": "Aprenda organização financeira de uma forma simples e fácil!",
+      "youtubeId": "AfMGeMZmyUU",
+      "duracao": "10",
+      "id": 15
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=V7z5bC4GOQI",
+      "titulo": "Como ADMINISTRAR e ORGANIZAR o Dinheiro (Métodos de Livros de Finanças)",
+      "descricao": "Veja como administrar seu dinheiro de acordo com grandes livros de finanças pessoais!",
+      "youtubeId": "V7z5bC4GOQI",
+      "duracao": "9",
+      "id": 16
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=o7BUfhgZb68",
+      "titulo": "GUSTAVO CERBASI: OS MAIORES ERROS DA ORGANIZAÇÃO FINANCEIRA | Os Economistas 64",
+      "descricao": "Neste episódio especial, temos a honra de receber Gustavo Cerbasi, grande autor e especialista em finanças pessoais, para discutir o tema \"Como Organizar sua vida financeira para Investir mais.\nNeste episódio, mergulharemos na organização financeira e como ela pode transformar sua vida. Gustavo Cerbasi, conhecido por sua abordagem prática, compartilhará suas melhores dicas e estratégias para que você possa criar uma base sólida para suas finanças pessoais e aproveitar ao máximo suas oportunidades de investimento.",
+      "youtubeId": "o7BUfhgZb68",
+      "duracao": "5",
+      "id": 17
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xIIa3A3kY-k",
+      "titulo": "Como se organizar financeiramente: 7 passos para sair do caos financeiro 💸",
+      "descricao": "Se você está cansado de ver seu dinheiro desaparecer sem saber para onde ele foi esse vídeo é pra você. Por que hoje, quero te mostrar 7 passos simples para você organizar seu dinheiro e ter uma vida financeira mais equilibrada.",
+      "youtubeId": "xIIa3A3kY-k",
+      "duracao": "14",
+      "id": 18
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jvJBjO24PVs",
+      "titulo": "10 dicas para se organizar financeiramente em 2024!",
+      "descricao": "No vídeo de hoje, trouxe 10 dicas para te ajudar a ficar no verde em 2024 e ser um orgulho da Nath Finanças!",
+      "youtubeId": "jvJBjO24PVs",
+      "duracao": "14",
+      "id": 19
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Vi7sSRi_3ao",
+      "titulo": "10 PASSOS para PLANEJAMENTO FINANCEIRO FÁCIL e SIMPLES | Minimalismo | Educação Financeira",
+      "descricao": "10 PASSOS para PLANEJAMENTO FINANCEIRO FÁCIL e SIMPLES | Minimalismo | Educação Financeira",
+      "youtubeId": "Vi7sSRi_3ao",
+      "duracao": "14",
+      "id": 20
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HzRK6wTSHHU",
+      "titulo": "Educação Financeiro – Educação Financeira Para Iniciante!",
+      "descricao": "Olá pessoal, tudo bem! No vídeo de hoje falaremos um pouco de educação financeira para iniciantes.\nNesse vídeo você irá saber tudo sobre educação financeira, e como usar a educação financeira para garantir um futuro próspero.",
+      "youtubeId": "HzRK6wTSHHU",
+      "duracao": "5",
+      "id": 21
+    }
+  ],
+  "lancamentos": [
+    {
+      "descricao": "Salario de Novembro",
+      "valor": 1475,
+      "categoria": "Salario",
+      "id_carteira": "58a2",
+      "recorrente": true,
+      "tipo": "receita",
+      "id": 9
+    },
+    {
+      "descricao": "Contas da Casa",
+      "valor": 2000,
+      "categoria": "Contas",
+      "id_carteira": "58a2",
+      "recorrente": true,
+      "tipo": "despesa",
+      "id": 10
+    },
+    {
+      "descricao": "Salario de Dezembro",
+      "valor": 1475,
+      "categoria": "Salario",
+      "id_carteira": "58a2",
+      "recorrente": true,
+      "tipo": "receita",
+      "id": 11
+    },
+    {
+      "descricao": "13 Salario",
+      "valor": 1475,
+      "categoria": "Salario",
+      "id_carteira": "58a2",
+      "recorrente": true,
+      "tipo": "receita",
+      "id": 12
+    },
+    {
+      "descricao": "Despesa da Viagem ",
+      "valor": 500,
+      "categoria": "Viagem",
+      "id_carteira": "qGCgG4P",
+      "recorrente": false,
+      "tipo": "despesa",
+      "id": 13
+    },
+    {
+      "descricao": "Aluguel",
+      "valor": 800,
+      "categoria": "Contas",
+      "id_carteira": "j02UVIb",
+      "recorrente": true,
+      "tipo": "despesa",
+      "id": 14
+    },
+    {
+      "descricao": "Verba para Viagem",
+      "valor": 2000,
+      "categoria": "Viagem",
+      "id_carteira": "qGCgG4P",
+      "recorrente": false,
+      "tipo": "receita",
+      "id": 15
+    }
+  ],
+  "objetivos": [
+    {
+      "nome": "Mudar de país",
+      "valor": 100000,
+      "valorInicial": 25500,
+      "data": "2025-05-30",
+      "cor": "#4caf50",
+      "descricao": "Me mudar para suíça",
+      "icone": "fas fa-question-circle",
+      "depositos": [
+        {
+          "id": 1733582532265,
+          "valor": 500,
+          "data": "2024-12-14"
+        },
+        {
+          "id": 1733667539612,
+          "valor": 20000,
+          "data": "2024-12-04"
+        }
+      ],
+      "id": 22
+    },
+    {
+      "nome": "Comprar uma casa",
+      "valor": 300,
+      "valorInicial": 100,
+      "data": "2024-12-01",
+      "cor": "#4caf50",
+      "descricao": "Comprar uma casa",
+      "icone": "fas fa-question-circle",
+      "depositos": [],
+      "id": 23
+    }
+  ],
+  "tipos_de_objetivos": [
+    {
+      "id": "1",
+      "nome": "Comprar um Carro"
+    },
+    {
+      "id": "2",
+      "nome": "Viajar para a Europa"
+    },
+    {
+      "id": "3",
+      "nome": "Comprar uma Casa"
+    },
+    {
+      "id": "4",
+      "nome": "Fundo de Emergência"
+    },
+    {
+      "id": "5",
+      "nome": "Educação Superior"
+    },
+    {
+      "id": "6",
+      "nome": "Aposentadoria"
+    }
+  ],
+  "lembretes": [
+    {
+      "titulo": "Data da Viagem",
+      "descricao": "Dia que vou Viajar ",
+      "valor": 0,
+      "data": "2024-12-11",
+      "status": false,
+      "frequencia": "null",
+      "id": 2
+    },
+    {
+      "titulo": "Conta de luz",
+      "descricao": "Agendar pagamento conta de luz",
+      "valor": 200,
+      "data": "2025-09-17",
+      "status": false,
+      "frequencia": "semanal",
+      "id": 3
+    },
+    {
+      "titulo": "Pagar Aluguel",
+      "descricao": "Lembrete para ser pago o aluguel",
+      "valor": 1600,
+      "data": "2025-09-18",
+      "status": false,
+      "frequencia": "null",
+      "id": 4
+    },
+    {
+      "titulo": "Fazer compras",
+      "descricao": "Fazer compras",
+      "valor": 500,
+      "data": "2025-09-19",
+      "status": true,
+      "frequencia": "null",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lançamentos</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="lancamento.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+      <img src="../../assets/images/histogram-svgrepo-com.svg" alt="">
+      <a href="http://localhost:3000/dashbord"><i class="bi bi-house-door"></i></a>
+      <a href="http://localhost:3000/carteiras"><i class="bi bi-bank"></i></a>
+      <a href="http://localhost:3000/cadastro/lancamento"><i class="bi bi-cash-coin"></i></a>
+      <a href="http://localhost:3000/objetivos"><i class="bi bi-bookmark-check-fill"></i></a>
+      <a href="http://localhost:3000/tutoriais"><i class="bi bi-play-circle-fill"></i></a>
+      <a href="http://localhost:3000/calendario"><i class="bi bi-calendar2-check-fill"></i></a>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container mt-4">
+      <h2 class="text-center mb-4 title-form">Lançamentos</h2>
+
+      <!-- Abas -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="receitas-tab" data-bs-toggle="tab" data-bs-target="#receitas" type="button" role="tab">Receitas</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="despesas-tab" data-bs-toggle="tab" data-bs-target="#despesas" type="button" role="tab">Despesas</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="todos-tab" data-bs-toggle="tab" data-bs-target="#todos" type="button" role="tab">Todos</button>
+          </li>
+      </ul>
+
+      <div class="tab-content mt-4">
+          <!-- Aba Receitas -->
+          <div class="tab-pane fade show active" id="receitas" role="tabpanel">
+              <form class="row g-3 mb-4" autocomplete="off">
+                  <div class="col-md-4">
+                      <label class="form-label">Descrição</label>
+                      <input type="text" class="form-control" id="exampleInputDescricao" placeholder="Descrição">
+                  </div>
+                  <div class="col-md-2">
+                      <label class="form-label">Valor</label>
+                      <input type="number" class="form-control" id="exampleInputValor" placeholder="Valor">
+                  </div>
+                  <div class="col-md-3">
+                      <label class="form-label">Categoria</label>
+                      <input type="text" class="form-control" id="exampleInputCategoria" placeholder="Categoria">
+                  </div>
+                  <div class="col-md-3">
+                      <label class="form-label">Conta</label>
+                      <select class="form-control" id="exampleInputConta"></select>
+                  </div>
+                  <div class="col-md-2 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label">Recorrente?</label>
+                  </div>
+                  <div class="col-12">
+                      <button type="button" class="btn btn-primary" id="Submit" onclick="addData('receita')">Salvar</button>
+                      <button type="button" class="btn btn-success" id="Update" style="display:none;">Atualizar</button>
+                  </div>
+              </form>
+              <table class="table table-striped" id="crudTable">
+                  <thead>
+                      <tr>
+                          <th>Descrição</th>
+                          <th>Valor</th>
+                          <th>Categoria</th>
+                          <th>Conta</th>
+                          <th>Recorrente</th>
+                          <th>Ações</th>
+                      </tr>
+                  </thead>
+                  <tbody></tbody>
+              </table>
+          </div>
+
+          <!-- Aba Despesas -->
+          <div class="tab-pane fade" id="despesas" role="tabpanel">
+              <table class="table table-striped" id="despesasTable">
+                  <thead>
+                      <tr>
+                          <th>Descrição</th>
+                          <th>Valor</th>
+                          <th>Categoria</th>
+                          <th>Conta</th>
+                          <th>Recorrente</th>
+                          <th>Ações</th>
+                      </tr>
+                  </thead>
+                  <tbody></tbody>
+              </table>
+          </div>
+
+          <!-- Aba Todos -->
+          <div class="tab-pane fade" id="todos" role="tabpanel">
+              <table class="table table-striped" id="lancamentosTable">
+                  <thead>
+                      <tr>
+                          <th>Descrição</th>
+                          <th>Valor</th>
+                          <th>Categoria</th>
+                          <th>Conta</th>
+                          <th>Recorrente</th>
+                          <th>Tipo</th>
+                      </tr>
+                  </thead>
+                  <tbody id="lancamentosTableBody"></tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/lancamento_script.js"></script>
+</body>
+</html>

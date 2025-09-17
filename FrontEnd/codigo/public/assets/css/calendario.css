@@ -1,0 +1,36 @@
+/* Garantir que o modal ocupe toda a tela e centralize o conteúdo */
+
+body {
+  background-color: #edf3fb;
+}
+#modalOverlay {
+  display: none; /* Oculto por padrão */
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 100px;
+  background-color: #ffffff;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 60px;
+  border-right: 1px solid #ddd;
+  display: flex; /* Permite o alinhamento com flexbox */
+  flex-direction: column; /* Direção vertical */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+#modalOverlay.show {
+  display: flex;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 640px) {
+  #modalOverlay > div {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
