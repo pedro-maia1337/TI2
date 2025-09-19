@@ -271,13 +271,22 @@
       "id": 14
     },
     {
-      "descricao": "Verba para Viagem",
-      "valor": 2000,
-      "categoria": "Viagem",
-      "id_carteira": "qGCgG4P",
+      "descricao": "Investimento CDI",
+      "valor": 500,
+      "categoria": "Investimento",
+      "id_carteira": "1",
       "recorrente": false,
       "tipo": "receita",
-      "id": 15
+      "id": 16
+    },
+    {
+      "descricao": "Investimento CDI",
+      "valor": 25,
+      "categoria": "Investimento",
+      "id_carteira": "1",
+      "recorrente": false,
+      "tipo": "receita",
+      "id": 17
     }
   ],
   "objetivos": [
