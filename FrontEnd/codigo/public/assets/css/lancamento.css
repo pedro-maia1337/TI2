@@ -1,119 +1,145 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ====== ÁREA PRINCIPAL ====== */
+.main-content {
+  margin-left: 110px; /* largura fixa da sidebar */
+  padding: 20px;
+  background-color: #f1f6fd;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-body {
-    display: flex;
-    background-color: #edf3fb;
-    font-family: "Segoe UI", Arial, sans-serif;
-    min-height: 100vh;
-}
-
-/* Sidebar */
+/* ====== SIDEBAR ====== */
 .sidebar {
-    width: 90px;
-    background-color: #fff;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 60px;
-    border-right: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px; /* largura da sidebar */
+  height: 100vh;
+  background-color: #5f2eea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .sidebar img {
-    width: 40px;
-    margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
 .sidebar a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    color: #333;
-    font-size: 20px;
-    text-decoration: none;
-    transition: all 0.2s ease;
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .sidebar a:hover {
-    background-color: #f1f1f1;
-    font-size: 22px;
-    border-radius: 8px;
+  transform: scale(1.1);
+  color: #dcdcff;
 }
 
-/* Container */
-.container {
-    margin-left: 110px;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
+/* Wrapper para centralizar conteúdo */
+.content-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Títulos */
-.title-form {
-    font-weight: bold;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 25px;
+/* Linha principal: tabela + cards */
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* impede que os elementos quebrem linha */
+  gap: 20px;
+  margin-top: 20px;
+  align-items: flex-start;
 }
 
-/* Botões */
-.btn {
-    border-radius: 6px;
-    padding: 6px 14px;
-    font-size: 0.95em;
-    font-weight: 500;
+/* ====== TABELA ====== */
+.table-card {
+  flex: 3;
+  min-width: 0;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 15px;
 }
 
-#Update {
-    display: none;
+.table thead {
+  background-color: #f9fafc;
+  color: #555;
+  font-weight: 600;
 }
 
-/* Tabelas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.table tbody tr:hover {
+  background-color: #f1f6fd;
+  transition: background 0.2s ease;
 }
 
-table thead {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
+/* ====== CARDS ====== */
+.cards-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 250px;
 }
 
-table th, table td {
-    padding: 12px;
-    text-align: center;
+.summary-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease;
 }
 
-table tbody tr:hover {
-    background-color: #f5f5f5;
+.summary-card:hover {
+  transform: translateY(-2px);
 }
 
-/* Receitas */
-table tbody tr.receita {
-    background-color: #e9f8e9;
-}
-table tbody tr.receita:hover {
-    background-color: #c8ebc8;
+.summary-title {
+  font-size: 0.85rem;
+  color: #777;
 }
 
-/* Despesas */
-table tbody tr.despesa {
-    background-color: #fdecea;
+.summary-value {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
-table tbody tr.despesa:hover {
-    background-color: #f6c1bd;
+
+.summary-icon {
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.icon-saldo { background-color: #1e90ff; }
+.icon-receita { background-color: #28a745; }
+.icon-despesa { background-color: #dc3545; }
+.icon-balanco { background-color: #198754; }
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 991px) {
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .row {
+    flex-direction: column; /* tabela em cima e cards embaixo */
+  }
+
+  .cards-column {
+    min-width: 100%;
+  }
 }

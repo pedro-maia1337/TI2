@@ -4,13 +4,11 @@ Calendário
     - Funcionalidade - caso não esteja pago (dia fica em vermelho) - caso esteja fica verde
 
 Lançamentos
-    -Centralizar
-    -Testar os cruds
     -Linkar com contas
 
 -Ainda refatorar 
     -Centralizar dashbord
-    -Abas de carteiras (como um todo)
-    -Aba de lançamentos (como um todo)
+    -Abas de carteiras (como um todo), base no mobilis*********
     -Mudar esses alerts feios e colocar um aviso em tela 
     -Usar mobilis como base
+    -Analisar esses dados, linkar, validar os relevantes

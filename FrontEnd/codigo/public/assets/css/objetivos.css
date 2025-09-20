@@ -1,40 +1,35 @@
 .sidebar {
-    width: 100px;
-    background-color: #ffffff;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 60px;
-    border-right: 1px solid #ddd;
-    display: flex; /* Permite o alinhamento com flexbox */
-    flex-direction: column; /* Direção vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 110px; /* largura da sidebar */
+  height: 100vh;
+  background-color: #5f2eea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .sidebar img {
-    display: flex; /* Para alinhar ícones centralmente com textos, se aplicável */
-    justify-content: center; /* Centraliza o ícone dentro do link */
-    align-items: center; /* Centraliza o ícone dentro do link */
-    padding: 15px 20px; /* Aumenta o espaço para tornar o link maior */
-    color: #333;
-    text-decoration: none;
-    font-size: 18px; /* Aumenta o tamanho da fonte (se aplicável aos ícones) */
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
 .sidebar a {
-    display: flex; /* Para alinhar ícones centralmente com textos, se aplicável */
-    justify-content: center; /* Centraliza o ícone dentro do link */
-    align-items: center; /* Centraliza o ícone dentro do link */
-    padding: 15px 20px; /* Aumenta o espaço para tornar o link maior */
-    color: #333;
-    text-decoration: none;
-    font-size: 18px; /* Aumenta o tamanho da fonte (se aplicável aos ícones) */
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .sidebar a:hover {
-    background-color: #f1f1f1;
-    font-size: 20px; /* Aumenta levemente o tamanho na interação */
+  transform: scale(1.1);
+  color: #dcdcff;
 }
 
 

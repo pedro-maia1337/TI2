@@ -287,6 +287,26 @@
       "recorrente": false,
       "tipo": "receita",
       "id": 17
+    },
+    {
+      "descricao": "Salario Janeiro",
+      "categoria": "Salario",
+      "valor": 2600,
+      "id_carteira": "Inter",
+      "status": false,
+      "tipo": "receita",
+      "data": "2025-09-20",
+      "id": 18
+    },
+    {
+      "descricao": "Saida Mercado Novo",
+      "categoria": "Lazer",
+      "valor": 500,
+      "id_carteira": "Inter",
+      "status": false,
+      "tipo": "despesa",
+      "data": "2025-09-20",
+      "id": 19
     }
   ],
   "objetivos": [
